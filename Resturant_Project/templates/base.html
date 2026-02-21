@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyRestaurant</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav class="sidebar">
+    <h2 class="logo">Welcome To My Restaurant</h2>
+<div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/menu/">Menu</a>
+    <a href="/book/">Book</a>
+</nav></div>
+<div class="content">
+    <div>
+{% block content %}
+{% endblock %}
+
+<footer class="foot">
+        <p> © 2026 MyRestaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

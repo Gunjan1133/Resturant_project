@@ -1,0 +1,294 @@
+body{
+    background-color: lightslategray;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* MAIN LAYOUT */
+.main{
+    display: flex;
+    
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    background: black;
+    color: yellow;
+    text-decoration: none;
+    border-radius: 5px;
+     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: blue;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(108,92,231,0.6);
+   
+}
+.sidebar{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* NAV LINKS */
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+    /* IMPORTANT: vertical text hatao */
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+}
+
+/* WELCOME TEXT */
+.logo{
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+   
+    text-align: center;
+}
+.content{
+    flex:1;
+    padding:20px;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hero {
+    height: 127vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 100px;
+    font-style: italic;
+}
+.her {
+    height: 94vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 100px;
+    font-style: italic;
+}
+.her h1 {
+    font-size: 50px;
+    color: black;
+    font-style: italic;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+p{
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+ul{
+    color:black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.foot{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 0;
+    text-align: center;
+    background: palevioletred;
+}
+
+.foot p{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.box1{
+    margin-top: 7px;
+    background: white;
+    overflow: hidden;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+h1{
+    color:#e63946;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.burger-img{
+    width: 400px;        /* size control */
+    display: block;
+      /* center */
+    float: right;
+}
+.menu-container {
+    padding: 40px;
+}
+
+/* FILTER BUTTONS */
+.menu-filter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #e63946;
+}
+
+/* CARD CONTAINER */
+.menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* HORIZONTAL CARD */
+.menu-card {
+    display: flex;
+    width: 420px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.menu-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.menu-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 15px;
+}
+
+.menu-info h3 {
+    margin-bottom: 5px;
+}
+
+.menu-info span {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 18px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    
+}
+
+.booking-container {
+    width: 420px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.booking-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #e63946;
+    color: white;
+}
+
+.reset-btn {
+    background: #6c757d;
+    
+}
+
+button:hover {
+    opacity: 0.9;
+     transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
